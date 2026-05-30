@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>影视分类总览-高清影视片库-热门影片在线观看</title>
+  <meta name="description" content="高清影视片库页面汇集电影、电视剧和影视视频内容，按分类、热度和更新状态整理。">
+  <meta name="keywords" content="高清影视片库,精选内容持续更新,热门影片在线观看,影视片库,电影电视剧,精选内容,影视分类,热门分类">
+  <link rel="stylesheet" href="./assets/base.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./index.html" aria-label="高清影视片库">
+        <span class="brand-mark">影</span>
+        <span class="brand-text">
+          <strong>高清影视片库</strong>
+          <small>精选内容持续更新</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="./index.html" class="">首页</a>
+        <a href="./categories.html" class="is-active">分类</a>
+        <a href="./ranking.html" class="">排行榜</a>
+          <a href="./category-featured.html" class="">热门精选</a>
+          <a href="./category-new-releases.html" class="">新锐片单</a>
+          <a href="./category-story-house.html" class="">剧情长廊</a>
+          <a href="./category-fantasy-world.html" class="">幻想剧场</a>
+      </nav>
+      <form class="site-search" data-search-form action="./categories.html">
+        <input type="search" name="q" placeholder="搜索影片、地区、类型" autocomplete="off" data-search-input>
+        <button type="submit">搜索</button>
+      </form>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="打开菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-panel" data-mobile-menu>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./ranking.html">排行榜</a>
+        <a href="./category-featured.html">热门精选</a>
+        <a href="./category-new-releases.html">新锐片单</a>
+        <a href="./category-story-house.html">剧情长廊</a>
+        <a href="./category-fantasy-world.html">幻想剧场</a>
+        <a href="./category-suspense-lab.html">悬疑密室</a>
+        <a href="./category-warm-light.html">治愈光影</a>
+        <a href="./category-action-road.html">动作冒险</a>
+        <a href="./category-youth-time.html">青春时光</a>
+        <a href="./category-global-room.html">环球影库</a>
+        <a href="./category-classic-list.html">经典回看</a>
+      <form class="mobile-search" data-search-form action="./categories.html">
+        <input type="search" name="q" placeholder="搜索影片" autocomplete="off" data-search-input>
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+    <div class="search-panel" data-search-panel hidden>
+      <div class="search-panel-head">
+        <strong>搜索结果</strong>
+        <button type="button" data-search-close aria-label="关闭搜索">×</button>
+      </div>
+      <div class="search-results" data-search-results></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="section compact-top">
+        <span class="section-kicker">Library</span>
+        <h1>影视分类总览</h1>
+        <p class="section-desc">围绕电影、剧集、动漫、地区、年份和题材建立独立片单，所有入口均可继续进入影片详情与播放页面。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="category-grid">
+
+        <a class="category-card" href="./category-featured.html">
+          <strong>热门精选</strong>
+          <p>聚合热度高、观看入口清晰的精选影视内容，覆盖电影、剧集、动漫与多地区作品。</p>
+        </a>
+
+        <a class="category-card" href="./category-new-releases.html">
+          <strong>新锐片单</strong>
+          <p>整理近期值得关注的影视作品，适合快速发现新鲜题材与高讨论度内容。</p>
+        </a>
+
+        <a class="category-card" href="./category-story-house.html">
+          <strong>剧情长廊</strong>
+          <p>以人物命运、情节张力和完整叙事为核心，收录多类型故事作品。</p>
+        </a>
+
+        <a class="category-card" href="./category-fantasy-world.html">
+          <strong>幻想剧场</strong>
+          <p>面向科幻、奇幻、冒险和想象力题材，呈现更具视觉感的观影选择。</p>
+        </a>
+
+        <a class="category-card" href="./category-suspense-lab.html">
+          <strong>悬疑密室</strong>
+          <p>集合悬疑、推理、惊悚和反转叙事，适合喜欢紧张节奏的观众。</p>
+        </a>
+
+        <a class="category-card" href="./category-warm-light.html">
+          <strong>治愈光影</strong>
+          <p>收录家庭、成长、喜剧和温情作品，适合轻松观看与连续浏览。</p>
+        </a>
+
+        <a class="category-card" href="./category-action-road.html">
+          <strong>动作冒险</strong>
+          <p>覆盖动作、战争、公路与冒险类型内容，强调节奏感和视听冲击。</p>
+        </a>
+
+        <a class="category-card" href="./category-youth-time.html">
+          <strong>青春时光</strong>
+          <p>整理青春、校园、励志与成长主题，适合按年份和地区延伸浏览。</p>
+        </a>
+
+        <a class="category-card" href="./category-global-room.html">
+          <strong>环球影库</strong>
+          <p>汇集来自不同地区的影视作品，便于按地区、类型和年份交叉发现。</p>
+        </a>
+
+        <a class="category-card" href="./category-classic-list.html">
+          <strong>经典回看</strong>
+          <p>面向可持续浏览的经典片单，提供详情、播放和相关推荐入口。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">Spotlight</span>
+          <h2>分类推荐</h2>
+          <p class="section-desc">从不同片单中抽取的精选内容，可继续进入详情页查看简介、影评和相关推荐。</p>
+        </div>
+        <a class="secondary-btn" href="./ranking.html">查看排行</a>
+      </div>
+      <div class="movie-grid">
+
+          <article class="movie-card" data-card data-title="诺娃队长" data-region="美国" data-type="电影" data-genre="科幻, 超级英雄, 女性">
+            <a href="./movie-112.html" class="movie-poster" aria-label="诺娃队长">
+              <img src="./112.jpg" alt="诺娃队长" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-112.html">诺娃队长</a></h3>
+              <p class="movie-meta">美国 · 科幻, 超级英雄, 女性</p>
+              <p class="movie-line">人类最后一个机甲战士诺娃，发现自己守护了二十年的“人类火种”基地，其实是个巨大的养猪场。</p>
+              <div class="movie-tags">
+                <span>太空歌剧</span><span>女英雄</span><span>机甲</span><span>牺牲</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="偷偷接吻" data-region="韩国" data-type="剧集" data-genre="爱情 / 喜剧">
+            <a href="./movie-76.html" class="movie-poster" aria-label="偷偷接吻">
+              <img src="./76.jpg" alt="偷偷接吻" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">剧集</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-76.html">偷偷接吻</a></h3>
+              <p class="movie-meta">韩国 · 爱情 / 喜剧</p>
+              <p class="movie-line">为了继承家族企业，高冷总裁必须伪装成已婚直男，他找公司里最不起眼的女程序员假结婚，却在茶水间开始了偷偷接吻的日常。</p>
+              <div class="movie-tags">
+                <span>办公室恋情</span><span>契约婚姻</span><span>先婚后爱</span><span>高甜</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="超凡蜘蛛侠" data-region="美国" data-type="电影" data-genre="动作， 科幻， 冒险">
+            <a href="./movie-664.html" class="movie-poster" aria-label="超凡蜘蛛侠">
+              <img src="./64.jpg" alt="超凡蜘蛛侠" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-664.html">超凡蜘蛛侠</a></h3>
+              <p class="movie-meta">美国 · 动作， 科幻， 冒险</p>
+              <p class="movie-line">中年彼得·帕克穿越到了一个没有蜘蛛侠的平行世界，却发现这里的纽约被章鱼博士用科技统治着。</p>
+              <div class="movie-tags">
+                <span>超级英雄</span><span>平行宇宙</span><span>黑色战衣</span><span>彼得·帕克</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="杰夫巴克利：曲终未散" data-region="美国" data-type="电影" data-genre="传记 / 音乐 / 剧情">
+            <a href="./movie-534.html" class="movie-poster" aria-label="杰夫巴克利：曲终未散">
+              <img src="./84.jpg" alt="杰夫巴克利：曲终未散" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-534.html">杰夫巴克利：曲终未散</a></h3>
+              <p class="movie-meta">美国 · 传记 / 音乐 / 剧情</p>
+              <p class="movie-line">英年早逝的音乐天才杰夫·巴克利生命最后两年的艺术探索与情感纠葛，一曲未竟的《Grace》如何成为他一生的预言。</p>
+              <div class="movie-tags">
+                <span>音乐人</span><span>传奇</span><span>悲剧</span><span>致敬</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="爱在血泪交织时" data-region="中国香港" data-type="电影" data-genre="动作 / 爱情">
+            <a href="./movie-227.html" class="movie-poster" aria-label="爱在血泪交织时">
+              <img src="./77.jpg" alt="爱在血泪交织时" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-227.html">爱在血泪交织时</a></h3>
+              <p class="movie-meta">中国香港 · 动作 / 爱情</p>
+              <p class="movie-line">一个冷酷无情的女杀手在执行任务时，救下了仇家的儿子，并决定培养他成为接班人，却在这个过程中爱上了自己的“作品”。</p>
+              <div class="movie-tags">
+                <span>黑帮</span><span>杀手</span><span>虐恋</span><span>救赎</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="梦想家约瑟夫" data-region="法国" data-type="电影" data-genre="奇幻">
+            <a href="./movie-172.html" class="movie-poster" aria-label="梦想家约瑟夫">
+              <img src="./22.jpg" alt="梦想家约瑟夫" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-172.html">梦想家约瑟夫</a></h3>
+              <p class="movie-meta">法国 · 奇幻</p>
+              <p class="movie-line">1942年的法国犹太区，一个男孩坚信自己是魔术师，他用“魔法”保护着更小的孩子们免受恐惧。</p>
+              <div class="movie-tags">
+                <span>魔幻现实主义</span><span>二战</span><span>孩童视角</span><span>想象力</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="地狱开麦拉" data-region="美国" data-type="电影" data-genre="恐怖 / 喜剧">
+            <a href="./movie-119.html" class="movie-poster" aria-label="地狱开麦拉">
+              <img src="./119.jpg" alt="地狱开麦拉" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-119.html">地狱开麦拉</a></h3>
+              <p class="movie-meta">美国 · 恐怖 / 喜剧</p>
+              <p class="movie-line">一档过气灵探节目为博流量，去废弃精神病院直播，结果他们召唤出的“观众”比在线人数还多。</p>
+              <div class="movie-tags">
+                <span>伪纪录片</span><span>灵异直播</span><span>网络主播</span><span>规则怪谈</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="精灵守护者最终章" data-region="日本" data-type="电影" data-genre="奇幻 / 冒险 / 动作">
+            <a href="./movie-120.html" class="movie-poster" aria-label="精灵守护者最终章">
+              <img src="./120.jpg" alt="精灵守护者最终章" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-120.html">精灵守护者最终章</a></h3>
+              <p class="movie-meta">日本 · 奇幻 / 冒险 / 动作</p>
+              <p class="movie-line">女保镖巴尔莎与皇子查古姆迎来最终决战，精灵王即将苏醒，人间面临毁灭或重生。</p>
+              <div class="movie-tags">
+                <span>精灵</span><span>守护者</span><span>最终章</span><span>史诗完结</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="我的街区第二季" data-region="美国" data-type="剧集" data-genre="剧情 / 喜剧">
+            <a href="./movie-243.html" class="movie-poster" aria-label="我的街区第二季">
+              <img src="./93.jpg" alt="我的街区第二季" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">剧集</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-243.html">我的街区第二季</a></h3>
+              <p class="movie-meta">美国 · 剧情 / 喜剧</p>
+              <p class="movie-line">上一季枪击事件后，四个好友试图回归正常高中生活，却发现他们社区的秘密远比帮派斗争更深。</p>
+              <div class="movie-tags">
+                <span>拉丁裔社区</span><span>青春成长</span><span>街头文化</span><span>友情与背叛</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="归乡" data-region="中国大陆" data-type="电影" data-genre="剧情 / 家庭 / 公路">
+            <a href="./movie-825.html" class="movie-poster" aria-label="归乡">
+              <img src="./75.jpg" alt="归乡" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-825.html">归乡</a></h3>
+              <p class="movie-meta">中国大陆 · 剧情 / 家庭 / 公路</p>
+              <p class="movie-line">一位在城市长大的叛逆少女，被迫跟随认知症的外公回到他记忆中的故乡，却发现那里早已消失。</p>
+              <div class="movie-tags">
+                <span>寻根</span><span>祖孙关系</span><span>城乡差异</span><span>治愈</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="五猛汉" data-region="中国" data-type="电影" data-genre="动作, 喜剧">
+            <a href="./movie-359.html" class="movie-poster" aria-label="五猛汉">
+              <img src="./59.jpg" alt="五猛汉" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-359.html">五猛汉</a></h3>
+              <p class="movie-meta">中国 · 动作, 喜剧</p>
+              <p class="movie-line">五个在直播平台靠“作死挑战”走红的大老爷们，被军方选中试验一套“社死式”的新型非致命武器。</p>
+              <div class="movie-tags">
+                <span>硬汉</span><span>反差萌</span><span>极限运动</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="龙城" data-region="中国" data-type="剧集" data-genre="科幻, 悬疑, 犯罪">
+            <a href="./movie-680.html" class="movie-poster" aria-label="龙城">
+              <img src="./80.jpg" alt="龙城" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">剧集</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-680.html">龙城</a></h3>
+              <p class="movie-meta">中国 · 科幻, 悬疑, 犯罪</p>
+              <p class="movie-line">2047年的龙城，警探陈霄的义体人搭档被谋杀，他在调查中发现自己也是被写入程序的复制人。</p>
+              <div class="movie-tags">
+                <span>赛博朋克</span><span>警匪</span><span>义体</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="活骷颅" data-region="美国" data-type="剧集" data-genre="科幻 / 恐怖">
+            <a href="./movie-669.html" class="movie-poster" aria-label="活骷颅">
+              <img src="./69.jpg" alt="活骷颅" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">剧集</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-669.html">活骷颅</a></h3>
+              <p class="movie-meta">美国 · 科幻 / 恐怖</p>
+              <p class="movie-line">未来世界穷人死后大脑被强制上传到廉价义体成为“活骷颅”劳工，一场系统故障让他们觉醒了前世记忆。</p>
+              <div class="movie-tags">
+                <span>意识上传</span><span>丧尸</span><span>惊悚</span><span>哲学</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="灼烧之爱" data-region="土耳其" data-type="剧集" data-genre="爱情 / 悬疑 / 复仇">
+            <a href="./movie-1087.html" class="movie-poster" aria-label="灼烧之爱">
+              <img src="./37.jpg" alt="灼烧之爱" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">剧集</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-1087.html">灼烧之爱</a></h3>
+              <p class="movie-meta">土耳其 · 爱情 / 悬疑 / 复仇</p>
+              <p class="movie-line">一场大火毁容了她，却让她获得了新生，她戴上人皮面具回到前夫身边，只为毁掉他的一切。</p>
+              <div class="movie-tags">
+                <span>豪门恩怨</span><span>替身情人</span><span>烧伤</span><span>美强惨</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="一路不顺风" data-region="中国大陆" data-type="电影" data-genre="喜剧 / 公路 / 家庭">
+            <a href="./movie-1495.html" class="movie-poster" aria-label="一路不顺风">
+              <img src="./145.jpg" alt="一路不顺风" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-1495.html">一路不顺风</a></h3>
+              <p class="movie-meta">中国大陆 · 喜剧 / 公路 / 家庭</p>
+              <p class="movie-line">春运期间，准女婿开黑车接岳父返乡，一千公里路程，两人经历了十六次不可思议的倒霉事。</p>
+              <div class="movie-tags">
+                <span>春运</span><span>拼车</span><span>岳父女婿</span><span>搞笑车祸</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="约克军曹" data-region="美国" data-type="电影" data-genre="战争传记">
+            <a href="./movie-799.html" class="movie-poster" aria-label="约克军曹">
+              <img src="./49.jpg" alt="约克军曹" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-799.html">约克军曹</a></h3>
+              <p class="movie-meta">美国 · 战争传记</p>
+              <p class="movie-line">以击杀数为乐的传奇狙击手约克，在执行终极任务时，却遭遇了无法扣动扳机的心理困境。</p>
+              <div class="movie-tags">
+                <span>狙击手</span><span>信仰与杀戮</span><span>一战</span><span>真实事件改编</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="锡兵战将" data-region="英国" data-type="电影" data-genre="战争 / 动作">
+            <a href="./movie-824.html" class="movie-poster" aria-label="锡兵战将">
+              <img src="./74.jpg" alt="锡兵战将" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-824.html">锡兵战将</a></h3>
+              <p class="movie-meta">英国 · 战争 / 动作</p>
+              <p class="movie-line">一个坚定的“锡兵”在索姆河战役中失去了所有战友，却发现自己只是个被遗弃的诱饵。</p>
+              <div class="movie-tags">
+                <span>一战</span><span>士兵视角</span><span>长镜头</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="沼泽狂鲨" data-region="美国" data-type="电影" data-genre="惊悚， 科幻， 灾难">
+            <a href="./movie-908.html" class="movie-poster" aria-label="沼泽狂鲨">
+              <img src="./8.jpg" alt="沼泽狂鲨" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-908.html">沼泽狂鲨</a></h3>
+              <p class="movie-meta">美国 · 惊悚， 科幻， 灾难</p>
+              <p class="movie-line">佛罗里达沼泽深处，一头能潜伏在泥浆中“呼吸空气”的变异巨鲨开始猎杀一切。</p>
+              <div class="movie-tags">
+                <span>变异生物</span><span>沼泽</span><span>生存</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="美丽国度" data-region="北欧（虚构）" data-type="电视剧" data-genre="科幻 / 悬疑">
+            <a href="./movie-1212.html" class="movie-poster" aria-label="美丽国度">
+              <img src="./12.jpg" alt="美丽国度" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电视剧</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-1212.html">美丽国度</a></h3>
+              <p class="movie-meta">北欧（虚构） · 科幻 / 悬疑</p>
+              <p class="movie-line">在一个由“美丽分数”决定一切的社会里，满分女神突然被扣了0.1分，瞬间从天堂坠入需要拼死求生的垃圾场。</p>
+              <div class="movie-tags">
+                <span>反乌托邦</span><span>人工智能</span><span>评分</span><span>社会寓言</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-card" data-card data-title="神鬼奇兵：失落的宝藏" data-region="美国" data-type="电影" data-genre="动作 / 冒险 / 奇幻">
+            <a href="./movie-1230.html" class="movie-poster" aria-label="神鬼奇兵：失落的宝藏">
+              <img src="./30.jpg" alt="神鬼奇兵：失落的宝藏" loading="lazy">
+              <span class="movie-year">2027</span>
+              <span class="movie-type">电影</span>
+            </a>
+            <div class="movie-card-body">
+              <h3><a href="./movie-1230.html">神鬼奇兵：失落的宝藏</a></h3>
+              <p class="movie-meta">美国 · 动作 / 冒险 / 奇幻</p>
+              <p class="movie-line">一张羊皮卷指向成吉思汗失落在地中海的海上陵墓，三路人马同时出发，只有一人能活着带回宝藏。</p>
+              <div class="movie-tags">
+                <span>寻宝</span><span>古代文明</span><span>神秘学</span><span>动作场面</span>
+              </div>
+            </div>
+          </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="footer-brand" href="./index.html">高清影视片库</a>
+        <p>高清影视片库页面汇集电影、电视剧和影视视频内容，按分类、热度和更新状态整理。</p>
+      </div>
+      <div>
+        <h2>快速入口</h2>
+        <ul>
+          <li><a href="./index.html">首页</a></li>
+          <li><a href="./categories.html">分类</a></li>
+          <li><a href="./ranking.html">排行榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>片库分类</h2>
+        <ul>
+          <li><a href="./category-featured.html">热门精选</a></li>
+          <li><a href="./category-new-releases.html">新锐片单</a></li>
+          <li><a href="./category-story-house.html">剧情长廊</a></li>
+          <li><a href="./category-fantasy-world.html">幻想剧场</a></li>
+          <li><a href="./category-suspense-lab.html">悬疑密室</a></li>
+          <li><a href="./category-warm-light.html">治愈光影</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 高清影视片库 · 热门影片在线观看</div>
+  </footer>
+
+  <script src="./assets/search-index.js" defer></script>
+  <script src="./assets/main.js" defer></script>
+
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

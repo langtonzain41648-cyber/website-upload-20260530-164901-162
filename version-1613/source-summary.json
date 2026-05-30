@@ -1,0 +1,7 @@
+{
+  "movie_count": 2000,
+  "category_count": 10,
+  "detail_page_count": 2000,
+  "m3u8_source_count": 20,
+  "image_reference_rule": "covers use top-level 1.jpg to 150.jpg in sequence; no placeholder JPG files were generated"
+}

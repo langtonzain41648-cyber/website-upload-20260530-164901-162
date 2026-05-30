@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分类总览-最新亚洲影片-最新影片合集-热门片库持续更新</title>
+    <meta name="description" content="最新亚洲影片分类总览，包含地区分类、类型分类和热门片库入口。">
+    <meta name="keywords" content="最新亚洲影片,亚洲影片,最新影片,影片合集,片库更新,热门内容">
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="主导航">
+            <a class="brand" href="index.html" aria-label="亚洲影片库首页">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img" focusable="false">
+                        <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 18.5v-13Z"></path>
+                        <path d="m10 8 6 4-6 4V8Z"></path>
+                    </svg>
+                </span>
+                <span class="brand-text">亚洲影片库</span>
+            </a>
+            <div class="desktop-nav">
+                <a class="nav-link" href="index.html">首页</a>
+                <a class="nav-link is-active" href="categories.html">分类</a>
+                <a class="nav-link" href="catalog-1.html">全部影片</a>
+                <a class="nav-link" href="ranking.html">排行榜</a>
+                <a class="nav-link" href="search.html">搜索</a>
+            </div>
+            <form class="header-search" action="search.html" method="get" role="search">
+                <label class="sr-only" for="header-search-input">搜索影片</label>
+                <input id="header-search-input" type="search" name="q" placeholder="搜索影片、地区、类型">
+                <button type="submit">搜索</button>
+            </form>
+            <button class="mobile-toggle" type="button" aria-label="展开导航" data-menu-toggle>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="mobile-menu" data-mobile-menu>
+            <a class="mobile-nav-link" href="index.html">首页</a>
+            <a class="mobile-nav-link is-active" href="categories.html">分类</a>
+            <a class="mobile-nav-link" href="catalog-1.html">全部影片</a>
+            <a class="mobile-nav-link" href="ranking.html">排行榜</a>
+            <a class="mobile-nav-link" href="search.html">搜索</a>
+            <form class="mobile-search" action="search.html" method="get" role="search">
+                <input type="search" name="q" placeholder="搜索影片">
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="sub-hero">
+            <div class="section-shell">
+                <span class="eyebrow">分类总览</span>
+                <h1>最新亚洲影片分类导航</h1>
+                <p>按地区、类型、年份和热度生成独立分类页，方便快速进入影片详情。</p>
+            </div>
+        </section>
+        <section class="page-section">
+            <div class="section-shell">
+            <div class="section-heading">
+                <div>
+                    <h2>独立分类页</h2>
+                    <p>每个入口均可直接打开，包含影片卡片与详情页链接</p>
+                </div>
+                
+            </div>
+                <div class="category-overview-grid">
+                <a class="category-overview-card" href="category-asia.html">
+                    <img src="./123.jpg" alt="亚洲精选" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">1187</span>
+                    <strong>亚洲精选</strong>
+                    <em>聚合中国大陆、中国香港、日本、韩国、泰国等亚洲影片。</em>
+                </a>
+                <a class="category-overview-card" href="category-mainland.html">
+                    <img src="./118.jpg" alt="中国大陆" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">524</span>
+                    <strong>中国大陆</strong>
+                    <em>中国大陆与中国内地相关影片合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-hongkong.html">
+                    <img src="./123.jpg" alt="港片精选" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">215</span>
+                    <strong>港片精选</strong>
+                    <em>中国香港与香港地区影片精选。</em>
+                </a>
+                <a class="category-overview-card" href="category-taiwan.html">
+                    <img src="./116.jpg" alt="台湾影片" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">94</span>
+                    <strong>台湾影片</strong>
+                    <em>中国台湾与台湾地区影片合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-japan.html">
+                    <img src="./68.jpg" alt="日本影片" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">201</span>
+                    <strong>日本影片</strong>
+                    <em>日本地区影片与动画、剧情、悬疑内容合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-korea.html">
+                    <img src="./112.jpg" alt="韩国影片" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">109</span>
+                    <strong>韩国影片</strong>
+                    <em>韩国犯罪、爱情、剧情与悬疑影片合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-us.html">
+                    <img src="./118.jpg" alt="美国影片" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">421</span>
+                    <strong>美国影片</strong>
+                    <em>美国地区高热度影片与类型片合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-europe.html">
+                    <img src="./50.jpg" alt="欧洲影片" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">382</span>
+                    <strong>欧洲影片</strong>
+                    <em>英国、法国、德国、意大利、西班牙等欧洲影片合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-latest.html">
+                    <img src="./118.jpg" alt="最新影片" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">1177</span>
+                    <strong>最新影片</strong>
+                    <em>2024 年以来的近期更新影片合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-drama.html">
+                    <img src="./21.jpg" alt="剧情佳作" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">766</span>
+                    <strong>剧情佳作</strong>
+                    <em>剧情、现实、文艺、人生主题影片合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-comedy.html">
+                    <img src="./50.jpg" alt="喜剧轻松" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">482</span>
+                    <strong>喜剧轻松</strong>
+                    <em>喜剧、黑色幽默、生活轻松向影片合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-action.html">
+                    <img src="./118.jpg" alt="动作冒险" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">732</span>
+                    <strong>动作冒险</strong>
+                    <em>动作、冒险、奇幻、武侠、战争影片合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-suspense.html">
+                    <img src="./123.jpg" alt="悬疑犯罪" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">652</span>
+                    <strong>悬疑犯罪</strong>
+                    <em>悬疑、犯罪、惊悚、心理主题影片合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-love.html">
+                    <img src="./60.jpg" alt="爱情家庭" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">703</span>
+                    <strong>爱情家庭</strong>
+                    <em>爱情、家庭、青春、治愈主题影片合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-scifi.html">
+                    <img src="./118.jpg" alt="科幻幻想" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">452</span>
+                    <strong>科幻幻想</strong>
+                    <em>科幻、灾难、未来、奇幻题材影片合集。</em>
+                </a>
+                <a class="category-overview-card" href="category-animation.html">
+                    <img src="./60.jpg" alt="动画动漫" loading="lazy">
+                    <span class="category-overview-shade"></span>
+                    <span class="tile-count">79</span>
+                    <strong>动画动漫</strong>
+                    <em>动画、动漫、儿童与家庭向影片合集。</em>
+                </a>
+                </div>
+            </div>
+        </section>
+        <section class="page-section muted-section">
+            <div class="section-shell stats-grid">
+                <div class="stat-card-list">
+                    <h2>地区索引</h2>
+                    <ul>
+                    <li><span>中国大陆</span><strong>424</strong></li>                    <li><span>美国</span><strong>388</strong></li>                    <li><span>日本</span><strong>196</strong></li>                    <li><span>中国香港</span><strong>169</strong></li>                    <li><span>韩国</span><strong>106</strong></li>                    <li><span>英国</span><strong>97</strong></li>                    <li><span>中国台湾</span><strong>85</strong></li>                    <li><span>法国</span><strong>82</strong></li>                    <li><span>中国</span><strong>68</strong></li>                    <li><span>西班牙</span><strong>33</strong></li>                    <li><span>香港</span><strong>31</strong></li>                    <li><span>泰国</span><strong>29</strong></li>
+                    </ul>
+                </div>
+                <div class="stat-card-list">
+                    <h2>类型索引</h2>
+                    <ul>
+                    <li><span>剧情</span><strong>716</strong></li>                    <li><span>喜剧</span><strong>415</strong></li>                    <li><span>悬疑</span><strong>345</strong></li>                    <li><span>爱情</span><strong>336</strong></li>                    <li><span>动作</span><strong>315</strong></li>                    <li><span>奇幻</span><strong>246</strong></li>                    <li><span>犯罪</span><strong>221</strong></li>                    <li><span>家庭</span><strong>221</strong></li>                    <li><span>惊悚</span><strong>214</strong></li>                    <li><span>科幻</span><strong>159</strong></li>                    <li><span>冒险</span><strong>145</strong></li>                    <li><span>历史</span><strong>139</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-shell">
+            <div class="footer-brand">
+                <a class="brand brand-invert" href="index.html" aria-label="亚洲影片库首页">
+                    <span class="brand-mark" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" role="img" focusable="false">
+                            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 18.5v-13Z"></path>
+                            <path d="m10 8 6 4-6 4V8Z"></path>
+                        </svg>
+                    </span>
+                    <span class="brand-text">亚洲影片库</span>
+                </a>
+                <p>聚合最新亚洲影片、热门片库和高分佳作，按地区、类型与年份清晰浏览。</p>
+            </div>
+            <div class="footer-column">
+                <h2>快速入口</h2>
+                <a href="catalog-1.html">全部影片</a>
+                <a href="categories.html">影片分类</a>
+                <a href="ranking.html">热门排行</a>
+                <a href="search.html">影片搜索</a>
+            </div>
+            <div class="footer-column">
+                <h2>热门分类</h2>
+                <a href="category-asia.html">亚洲精选</a>
+                <a href="category-japan.html">日本影片</a>
+                <a href="category-korea.html">韩国影片</a>
+                <a href="category-action.html">动作冒险</a>
+            </div>
+            <div class="footer-column">
+                <h2>片库索引</h2>
+                <a href="catalog-1.html">第 1 页</a>
+                <a href="catalog-5.html">第 5 页</a>
+                <a href="catalog-10.html">第 10 页</a>
+                <a href="catalog-20.html">第 20 页</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 亚洲影片库</span>
+            <span>最新亚洲影片-最新影片合集-热门片库持续更新</span>
+        </div>
+    </footer>
+    <script src="./assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

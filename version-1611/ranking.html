@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>排行榜-最新亚洲影片-最新影片合集-热门片库持续更新</title>
+    <meta name="description" content="亚洲影片热门排行榜，展示近期热门影片、高分佳作和片库推荐。">
+    <meta name="keywords" content="最新亚洲影片,亚洲影片,最新影片,影片合集,片库更新,热门内容">
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="主导航">
+            <a class="brand" href="index.html" aria-label="亚洲影片库首页">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img" focusable="false">
+                        <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 18.5v-13Z"></path>
+                        <path d="m10 8 6 4-6 4V8Z"></path>
+                    </svg>
+                </span>
+                <span class="brand-text">亚洲影片库</span>
+            </a>
+            <div class="desktop-nav">
+                <a class="nav-link" href="index.html">首页</a>
+                <a class="nav-link" href="categories.html">分类</a>
+                <a class="nav-link" href="catalog-1.html">全部影片</a>
+                <a class="nav-link is-active" href="ranking.html">排行榜</a>
+                <a class="nav-link" href="search.html">搜索</a>
+            </div>
+            <form class="header-search" action="search.html" method="get" role="search">
+                <label class="sr-only" for="header-search-input">搜索影片</label>
+                <input id="header-search-input" type="search" name="q" placeholder="搜索影片、地区、类型">
+                <button type="submit">搜索</button>
+            </form>
+            <button class="mobile-toggle" type="button" aria-label="展开导航" data-menu-toggle>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="mobile-menu" data-mobile-menu>
+            <a class="mobile-nav-link" href="index.html">首页</a>
+            <a class="mobile-nav-link" href="categories.html">分类</a>
+            <a class="mobile-nav-link" href="catalog-1.html">全部影片</a>
+            <a class="mobile-nav-link is-active" href="ranking.html">排行榜</a>
+            <a class="mobile-nav-link" href="search.html">搜索</a>
+            <form class="mobile-search" action="search.html" method="get" role="search">
+                <input type="search" name="q" placeholder="搜索影片">
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="sub-hero ranking-hero">
+            <div class="section-shell">
+                <span class="eyebrow">热门排行榜</span>
+                <h1>亚洲影片热门排行</h1>
+                <p>按评分、热度和片库推荐权重整理热门影片，提供详情页与播放入口。</p>
+                <div class="ranking-hero-grid">
+                <a class="ranking-hero-card" href="video-0088.html">
+                    <img src="./88.jpg" alt="时光教会我爱你第二季" loading="lazy">
+                    <span class="rank-badge big">1</span>
+                    <strong>时光教会我爱你第二季</strong>
+                    <em>评分 9.7 · 热度 105.8万</em>
+                </a>
+                <a class="ranking-hero-card" href="video-0132.html">
+                    <img src="./132.jpg" alt="吸血鬼猎人巴菲第四季" loading="lazy">
+                    <span class="rank-badge big">2</span>
+                    <strong>吸血鬼猎人巴菲第四季</strong>
+                    <em>评分 9.7 · 热度 105.2万</em>
+                </a>
+                <a class="ranking-hero-card" href="video-0110.html">
+                    <img src="./110.jpg" alt="从天而降的一亿颗星星" loading="lazy">
+                    <span class="rank-badge big">3</span>
+                    <strong>从天而降的一亿颗星星</strong>
+                    <em>评分 9.7 · 热度 104.5万</em>
+                </a>
+                </div>
+            </div>
+        </section>
+        <section class="page-section">
+            <div class="section-shell">
+            <div class="filter-panel" data-filter-panel>
+                <label class="sr-only" for="page-search">页面内搜索</label>
+                <input id="page-search" type="search" placeholder="在当前页面内搜索片名、简介、标签" data-filter-search>
+                <div class="filter-selects">
+                    <select data-filter-region aria-label="按地区筛选">
+                        <option value="all">全部地区</option>
+                        <option value="中国大陆">中国大陆</option>
+                        <option value="中国香港">中国香港</option>
+                        <option value="中国台湾">中国台湾</option>
+                        <option value="日本">日本</option>
+                        <option value="韩国">韩国</option>
+                        <option value="美国">美国</option>
+                        <option value="英国">英国</option>
+                        <option value="法国">法国</option>
+                    </select>
+                    <select data-filter-genre aria-label="按类型筛选">
+                        <option value="all">全部类型</option>
+                        <option value="剧情">剧情</option>
+                        <option value="喜剧">喜剧</option>
+                        <option value="悬疑">悬疑</option>
+                        <option value="爱情">爱情</option>
+                        <option value="动作">动作</option>
+                        <option value="犯罪">犯罪</option>
+                        <option value="科幻">科幻</option>
+                        <option value="动画">动画</option>
+                    </select>
+                    <select data-filter-year aria-label="按年份筛选">
+                        <option value="all">全部年份</option>
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+                <p class="filter-count" data-filter-count></p>
+            </div>
+                <div class="table-wrap">
+                    <table class="ranking-table">
+                        <thead>
+                            <tr>
+                                <th>排名</th>
+                                <th>影片</th>
+                                <th>地区</th>
+                                <th>年份</th>
+                                <th>类型</th>
+                                <th>评分</th>
+                                <th>热度</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                <tr data-card data-title="时光教会我爱你第二季" data-region="中国大陆" data-genre="爱情, 奇幻, 喜剧" data-year="2019">
+                    <td><span class="table-rank">1</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0088.html">
+                            <img src="./88.jpg" alt="时光教会我爱你第二季" loading="lazy">
+                            <span>
+                                <strong>时光教会我爱你第二季</strong>
+                                <em>第一季吻别后，林鹿和时敛森在各自的时空里努力向对方靠近，却发现时间线开始崩塌。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2019</td>
+                    <td>爱情, 奇幻, 喜剧</td>
+                    <td>9.7</td>
+                    <td>105.8万</td>
+                </tr>
+                <tr data-card data-title="吸血鬼猎人巴菲第四季" data-region="美国" data-genre="动作, 奇幻, 恐怖" data-year="1999">
+                    <td><span class="table-rank">2</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0132.html">
+                            <img src="./132.jpg" alt="吸血鬼猎人巴菲第四季" loading="lazy">
+                            <span>
+                                <strong>吸血鬼猎人巴菲第四季</strong>
+                                <em>进入大学的巴菲，不仅面临着高数挂科的烦恼，还要对付一个没有实体的军方超级恶魔。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>1999</td>
+                    <td>动作, 奇幻, 恐怖</td>
+                    <td>9.7</td>
+                    <td>105.2万</td>
+                </tr>
+                <tr data-card data-title="从天而降的一亿颗星星" data-region="日本 / 韩国" data-genre="爱情 / 悬疑 / 悲剧" data-year="2018">
+                    <td><span class="table-rank">3</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0110.html">
+                            <img src="./110.jpg" alt="从天而降的一亿颗星星" loading="lazy">
+                            <span>
+                                <strong>从天而降的一亿颗星星</strong>
+                                <em>失忆的危险男人像魔鬼一样吸引着富家女，随着记忆回归，残酷的身世真相如星陨落。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>日本 / 韩国</td>
+                    <td>2018</td>
+                    <td>爱情 / 悬疑 / 悲剧</td>
+                    <td>9.7</td>
+                    <td>104.5万</td>
+                </tr>
+                <tr data-card data-title="热血尖兵" data-region="中国大陆" data-genre="军旅, 青春, 动作" data-year="2026">
+                    <td><span class="table-rank">4</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0022.html">
+                            <img src="./22.jpg" alt="热血尖兵" loading="lazy">
+                            <span>
+                                <strong>热血尖兵</strong>
+                                <em>三个性格迥异的90后新兵在魔鬼训练营中从互坑到互信，最终成长为特种兵王，共同面对境外势力。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2026</td>
+                    <td>军旅, 青春, 动作</td>
+                    <td>9.7</td>
+                    <td>103.7万</td>
+                </tr>
+                <tr data-card data-title="十五重天" data-region="美国" data-genre="科幻 / 悬疑" data-year="2018">
+                    <td><span class="table-rank">5</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0242.html">
+                            <img src="./92.jpg" alt="十五重天" loading="lazy">
+                            <span>
+                                <strong>十五重天</strong>
+                                <em>一艘飞向新家园的世代飞船上，十五层甲板中的下层居民发现，他们已被克隆了十四次。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2018</td>
+                    <td>科幻 / 悬疑</td>
+                    <td>9.7</td>
+                    <td>102.7万</td>
+                </tr>
+                <tr data-card data-title="流星初恋" data-region="日本" data-genre="爱情, 青春" data-year="1997">
+                    <td><span class="table-rank">6</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0176.html">
+                            <img src="./26.jpg" alt="流星初恋" loading="lazy">
+                            <span>
+                                <strong>流星初恋</strong>
+                                <em>1997年夏天，一个女孩在流星雨夜对男孩说“我们永远在一起”，第二天男孩全家搬走了，没有留下任何联系方式。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>日本</td>
+                    <td>1997</td>
+                    <td>爱情, 青春</td>
+                    <td>9.7</td>
+                    <td>102.6万</td>
+                </tr>
+                <tr data-card data-title="超时空大冒险2018" data-region="中国大陆" data-genre="科幻, 喜剧, 冒险" data-year="2018">
+                    <td><span class="table-rank">7</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0308.html">
+                            <img src="./8.jpg" alt="超时空大冒险2018" loading="lazy">
+                            <span>
+                                <strong>超时空大冒险2018</strong>
+                                <em>废柴发明家意外发明时间机器，带着三个熊孩子穿梭历史，却把名人搞得一团糟。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2018</td>
+                    <td>科幻, 喜剧, 冒险</td>
+                    <td>9.7</td>
+                    <td>101.8万</td>
+                </tr>
+                <tr data-card data-title="灌篮青春" data-region="中国大陆" data-genre="剧情 / 运动 / 青春" data-year="2024">
+                    <td><span class="table-rank">8</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0044.html">
+                            <img src="./44.jpg" alt="灌篮青春" loading="lazy">
+                            <span>
+                                <strong>灌篮青春</strong>
+                                <em>一个只知道读书的县状元，为了追男生加入篮球队，最后把男生打爆了。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2024</td>
+                    <td>剧情 / 运动 / 青春</td>
+                    <td>9.7</td>
+                    <td>101.4万</td>
+                </tr>
+                <tr data-card data-title="疯狂竞赛片" data-region="美国" data-genre="喜剧 / 冒险" data-year="2024">
+                    <td><span class="table-rank">9</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0066.html">
+                            <img src="./66.jpg" alt="疯狂竞赛片" loading="lazy">
+                            <span>
+                                <strong>疯狂竞赛片</strong>
+                                <em>为了抢夺奥斯卡最后一张入场券，五部烂片剧组在沙漠里上演了一场无下限的真人吃鸡。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2024</td>
+                    <td>喜剧 / 冒险</td>
+                    <td>9.7</td>
+                    <td>101.1万</td>
+                </tr>
+                <tr data-card data-title="非凡三侠国语" data-region="中国香港 / 新加坡" data-genre="动作 / 喜剧 / 兄弟情" data-year="2026">
+                    <td><span class="table-rank">10</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0286.html">
+                            <img src="./136.jpg" alt="非凡三侠国语" loading="lazy">
+                            <span>
+                                <strong>非凡三侠国语</strong>
+                                <em>三个互不相识的失意中年男，被国际刑警误认为是顶级特工，不得不硬着头皮去解救人质。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国香港 / 新加坡</td>
+                    <td>2026</td>
+                    <td>动作 / 喜剧 / 兄弟情</td>
+                    <td>9.7</td>
+                    <td>100.1万</td>
+                </tr>
+                <tr data-card data-title="从河底问好" data-region="日本" data-genre="剧情, 治愈, 悬疑" data-year="2024">
+                    <td><span class="table-rank">11</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0154.html">
+                            <img src="./4.jpg" alt="从河底问好" loading="lazy">
+                            <span>
+                                <strong>从河底问好</strong>
+                                <em>在东京失意的女孩回到故乡，继承了爷爷的河童宅急便，专门打捞河底那些被丢弃的“人生遗物”。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>日本</td>
+                    <td>2024</td>
+                    <td>剧情, 治愈, 悬疑</td>
+                    <td>9.7</td>
+                    <td>99.9万</td>
+                </tr>
+                <tr data-card data-title="我的男友是辅警" data-region="中国大陆" data-genre="剧情, 爱情, 生活" data-year="2024">
+                    <td><span class="table-rank">12</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0198.html">
+                            <img src="./48.jpg" alt="我的男友是辅警" loading="lazy">
+                            <span>
+                                <strong>我的男友是辅警</strong>
+                                <em>白领精英爱上了一个月薪三千的辅警，在鸡毛蒜皮的出警日常中，她重新定义了“安全感”。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2024</td>
+                    <td>剧情, 爱情, 生活</td>
+                    <td>9.7</td>
+                    <td>99.3万</td>
+                </tr>
+                <tr data-card data-title="巴哈旺大饭店" data-region="印度" data-genre="剧情" data-year="2023">
+                    <td><span class="table-rank">13</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0220.html">
+                            <img src="./70.jpg" alt="巴哈旺大饭店" loading="lazy">
+                            <span>
+                                <strong>巴哈旺大饭店</strong>
+                                <em>一名固执的老人坚信自己大限将至，执意入住“等死饭店”，却意外开启了与儿子长达三个月的荒诞等待。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>印度</td>
+                    <td>2023</td>
+                    <td>剧情</td>
+                    <td>9.7</td>
+                    <td>98.0万</td>
+                </tr>
+                <tr data-card data-title="大饼的莎士比亚" data-region="中国大陆" data-genre="喜剧 / 剧情" data-year="2016">
+                    <td><span class="table-rank">14</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0462.html">
+                            <img src="./12.jpg" alt="大饼的莎士比亚" loading="lazy">
+                            <span>
+                                <strong>大饼的莎士比亚</strong>
+                                <em>山区小学的语文老师用莎士比亚戏剧，点燃了一群孩子的夏天。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2016</td>
+                    <td>喜剧 / 剧情</td>
+                    <td>9.7</td>
+                    <td>97.7万</td>
+                </tr>
+                <tr data-card data-title="艾米公主" data-region="美国" data-genre="剧情/奇幻" data-year="2015">
+                    <td><span class="table-rank">15</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0396.html">
+                            <img src="./96.jpg" alt="艾米公主" loading="lazy">
+                            <span>
+                                <strong>艾米公主</strong>
+                                <em>童话王国的艾米公主厌倦了等待王子拯救，她撕掉剧本，穿越到了现代纽约当实习生。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2015</td>
+                    <td>剧情/奇幻</td>
+                    <td>9.7</td>
+                    <td>97.6万</td>
+                </tr>
+                <tr data-card data-title="真爱一世情" data-region="中国台湾" data-genre="爱情，家庭，年代" data-year="2003">
+                    <td><span class="table-rank">16</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0264.html">
+                            <img src="./114.jpg" alt="真爱一世情" loading="lazy">
+                            <span>
+                                <strong>真爱一世情</strong>
+                                <em>富家千金和穷画家相爱却遭到所有人反对，他们用一生证明真爱可以穿越生死，却输给了两个字的误会。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国台湾</td>
+                    <td>2003</td>
+                    <td>爱情，家庭，年代</td>
+                    <td>9.7</td>
+                    <td>97.4万</td>
+                </tr>
+                <tr data-card data-title="恐怖旅舍" data-region="美国" data-genre="恐怖, 惊悚, 犯罪" data-year="2024">
+                    <td><span class="table-rank">17</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0374.html">
+                            <img src="./74.jpg" alt="恐怖旅舍" loading="lazy">
+                            <span>
+                                <strong>恐怖旅舍</strong>
+                                <em>三名背包客住进一家便宜旅舍，却发现这里是为富豪猎人提供“猎物”的屠宰场。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2024</td>
+                    <td>恐怖, 惊悚, 犯罪</td>
+                    <td>9.7</td>
+                    <td>96.9万</td>
+                </tr>
+                <tr data-card data-title="来自天国的情书" data-region="日本" data-genre="爱情 / 奇幻 / 剧情" data-year="2019">
+                    <td><span class="table-rank">18</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0748.html">
+                            <img src="./148.jpg" alt="来自天国的情书" loading="lazy">
+                            <span>
+                                <strong>来自天国的情书</strong>
+                                <em>在人间与天国之间的中转站，一名邮差的唯一工作是帮死去的人寄出他们生前没有勇气寄出的最后一封信。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>日本</td>
+                    <td>2019</td>
+                    <td>爱情 / 奇幻 / 剧情</td>
+                    <td>9.7</td>
+                    <td>96.8万</td>
+                </tr>
+                <tr data-card data-title="深夜小狗离奇事件" data-region="英国" data-genre="悬疑" data-year="2023">
+                    <td><span class="table-rank">19</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0330.html">
+                            <img src="./30.jpg" alt="深夜小狗离奇事件" loading="lazy">
+                            <span>
+                                <strong>深夜小狗离奇事件</strong>
+                                <em>患有自闭症的少年为寻找邻居小狗的凶手，意外揭开自家尘封的秘密。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>英国</td>
+                    <td>2023</td>
+                    <td>悬疑</td>
+                    <td>9.7</td>
+                    <td>96.5万</td>
+                </tr>
+                <tr data-card data-title="少帅" data-region="中国大陆" data-genre="传记, 历史, 战争" data-year="2015">
+                    <td><span class="table-rank">20</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0484.html">
+                            <img src="./34.jpg" alt="少帅" loading="lazy">
+                            <span>
+                                <strong>少帅</strong>
+                                <em>从纨绔子弟到千古功臣，一部关于张学良跌宕起伏、争议不断的传奇一生。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2015</td>
+                    <td>传记, 历史, 战争</td>
+                    <td>9.7</td>
+                    <td>96.4万</td>
+                </tr>
+                <tr data-card data-title="退休警察" data-region="中国" data-genre="悬疑 / 犯罪" data-year="2024">
+                    <td><span class="table-rank">21</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0418.html">
+                            <img src="./118.jpg" alt="退休警察" loading="lazy">
+                            <span>
+                                <strong>退休警察</strong>
+                                <em>退休刑警老周被确诊阿尔茨海默症，他必须在记忆彻底消失前，侦破尘封三十年的悬案。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国</td>
+                    <td>2024</td>
+                    <td>悬疑 / 犯罪</td>
+                    <td>9.7</td>
+                    <td>96.3万</td>
+                </tr>
+                <tr data-card data-title="老虎搏懵" data-region="中国香港" data-genre="动作 / 喜剧 / 犯罪" data-year="1973">
+                    <td><span class="table-rank">22</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0352.html">
+                            <img src="./52.jpg" alt="老虎搏懵" loading="lazy">
+                            <span>
+                                <strong>老虎搏懵</strong>
+                                <em>一个装瞎的算命先生撞见黑帮交易，被迫假扮“老虎”大闹九龙城寨。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国香港</td>
+                    <td>1973</td>
+                    <td>动作 / 喜剧 / 犯罪</td>
+                    <td>9.7</td>
+                    <td>96.2万</td>
+                </tr>
+                <tr data-card data-title="走向深渊" data-region="日本" data-genre="悬疑 / 心理 / 犯罪" data-year="2016">
+                    <td><span class="table-rank">23</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0572.html">
+                            <img src="./122.jpg" alt="走向深渊" loading="lazy">
+                            <span>
+                                <strong>走向深渊</strong>
+                                <em>一名卧底警察在精神病院追查连环杀手，却发现自己才是最危险的那个病人。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>日本</td>
+                    <td>2016</td>
+                    <td>悬疑 / 心理 / 犯罪</td>
+                    <td>9.7</td>
+                    <td>96.2万</td>
+                </tr>
+                <tr data-card data-title="遗伤" data-region="中国大陆" data-genre="悬疑 / 剧情" data-year="2025">
+                    <td><span class="table-rank">24</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0506.html">
+                            <img src="./56.jpg" alt="遗伤" loading="lazy">
+                            <span>
+                                <strong>遗伤</strong>
+                                <em>失忆男子通过梦境片段，发现自己竟是一桩灭门惨案的在逃凶手。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2025</td>
+                    <td>悬疑 / 剧情</td>
+                    <td>9.7</td>
+                    <td>96.1万</td>
+                </tr>
+                <tr data-card data-title="时间之旅" data-region="美国" data-genre="科幻, 剧情" data-year="2024">
+                    <td><span class="table-rank">25</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0528.html">
+                            <img src="./78.jpg" alt="时间之旅" loading="lazy">
+                            <span>
+                                <strong>时间之旅</strong>
+                                <em>为拯救意外身亡的女儿，一位父亲意外陷入了无限循环的24小时。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2024</td>
+                    <td>科幻, 剧情</td>
+                    <td>9.7</td>
+                    <td>94.8万</td>
+                </tr>
+                <tr data-card data-title="老广的味道第三季" data-region="中国大陆" data-genre="纪录片" data-year="2024">
+                    <td><span class="table-rank">26</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0550.html">
+                            <img src="./100.jpg" alt="老广的味道第三季" loading="lazy">
+                            <span>
+                                <strong>老广的味道第三季</strong>
+                                <em>深入广东街头巷尾，探寻十种即将失传的“功夫菜”背后的守味人故事。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2024</td>
+                    <td>纪录片</td>
+                    <td>9.7</td>
+                    <td>94.5万</td>
+                </tr>
+                <tr data-card data-title="刺客与保镖" data-region="中国香港" data-genre="动作，喜剧" data-year="1992">
+                    <td><span class="table-rank">27</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0440.html">
+                            <img src="./140.jpg" alt="刺客与保镖" loading="lazy">
+                            <span>
+                                <strong>刺客与保镖</strong>
+                                <em>顶尖保镖发现他要保护的黑帮老大，竟是当年训练自己杀人技术的冷血师傅。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国香港</td>
+                    <td>1992</td>
+                    <td>动作，喜剧</td>
+                    <td>9.7</td>
+                    <td>94.0万</td>
+                </tr>
+                <tr data-card data-title="赏金猎人" data-region="韩国" data-genre="动作/喜剧/犯罪" data-year="2024">
+                    <td><span class="table-rank">28</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0594.html">
+                            <img src="./144.jpg" alt="赏金猎人" loading="lazy">
+                            <span>
+                                <strong>赏金猎人</strong>
+                                <em>为了还清炸鸡店债务，两名落魄的前特工接下了抓捕“偷电瓶车贼”的活，却卷入了总统选举阴谋。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>韩国</td>
+                    <td>2024</td>
+                    <td>动作/喜剧/犯罪</td>
+                    <td>9.7</td>
+                    <td>93.9万</td>
+                </tr>
+                <tr data-card data-title="幻觉围城" data-region="中国大陆" data-genre="科幻" data-year="2027">
+                    <td><span class="table-rank">29</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0814.html">
+                            <img src="./64.jpg" alt="幻觉围城" loading="lazy">
+                            <span>
+                                <strong>幻觉围城</strong>
+                                <em>2087年，一名“幻觉猎人”潜入一座被VR游戏控制的城市，发现所有沉溺于幻觉的居民，其实是清醒的。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2027</td>
+                    <td>科幻</td>
+                    <td>9.7</td>
+                    <td>93.8万</td>
+                </tr>
+                <tr data-card data-title="夺命金" data-region="中国香港" data-genre="悬疑、犯罪、剧情" data-year="2024">
+                    <td><span class="table-rank">30</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0616.html">
+                            <img src="./16.jpg" alt="夺命金" loading="lazy">
+                            <span>
+                                <strong>夺命金</strong>
+                                <em>一个黑帮小混混、一个银行职员和一个落魄警察，因为一张被诅咒的股票代码，在72小时内命运交织，全员皆亡。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国香港</td>
+                    <td>2024</td>
+                    <td>悬疑、犯罪、剧情</td>
+                    <td>9.7</td>
+                    <td>93.6万</td>
+                </tr>
+                <tr data-card data-title="逃出玉米地" data-region="美国" data-genre="恐怖, 悬疑" data-year="2026">
+                    <td><span class="table-rank">31</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0770.html">
+                            <img src="./20.jpg" alt="逃出玉米地" loading="lazy">
+                            <span>
+                                <strong>逃出玉米地</strong>
+                                <em>六名网红前往废弃玉米地直播探险，却发现玉米会呼吸，而地底的怪物正通过根系吞噬闯入者。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2026</td>
+                    <td>恐怖, 悬疑</td>
+                    <td>9.7</td>
+                    <td>93.5万</td>
+                </tr>
+                <tr data-card data-title="一招半式闯江湖" data-region="中国香港" data-genre="喜剧, 动作" data-year="1985">
+                    <td><span class="table-rank">32</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0704.html">
+                            <img src="./104.jpg" alt="一招半式闯江湖" loading="lazy">
+                            <span>
+                                <strong>一招半式闯江湖</strong>
+                                <em>只会一招半式的街头骗子阿福，意外卷入武林大会，却靠歪打正着骗过了所有掌门。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国香港</td>
+                    <td>1985</td>
+                    <td>喜剧, 动作</td>
+                    <td>9.7</td>
+                    <td>93.4万</td>
+                </tr>
+                <tr data-card data-title="爱情之罪" data-region="法国 / 德国" data-genre="剧情 / 惊悚 / 情色" data-year="2024">
+                    <td><span class="table-rank">33</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0638.html">
+                            <img src="./38.jpg" alt="爱情之罪" loading="lazy">
+                            <span>
+                                <strong>爱情之罪</strong>
+                                <em>一名女哲学家被丈夫起诉“情感虐待”，庭审过程中，他们二十年的开放式婚姻被逐帧解剖。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>法国 / 德国</td>
+                    <td>2024</td>
+                    <td>剧情 / 惊悚 / 情色</td>
+                    <td>9.7</td>
+                    <td>93.3万</td>
+                </tr>
+                <tr data-card data-title="欲海春潮" data-region="中国大陆" data-genre="剧情 / 伦理" data-year="2025">
+                    <td><span class="table-rank">34</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0726.html">
+                            <img src="./126.jpg" alt="欲海春潮" loading="lazy">
+                            <span>
+                                <strong>欲海春潮</strong>
+                                <em>一个被抛弃的“金丝雀”，用十年时间，将曾经玩弄过她的男人们一个个拉下马。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2025</td>
+                    <td>剧情 / 伦理</td>
+                    <td>9.7</td>
+                    <td>93.1万</td>
+                </tr>
+                <tr data-card data-title="未知时间的爱" data-region="中国大陆" data-genre="科幻 / 爱情 / 悬疑" data-year="2025">
+                    <td><span class="table-rank">35</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0836.html">
+                            <img src="./86.jpg" alt="未知时间的爱" loading="lazy">
+                            <span>
+                                <strong>未知时间的爱</strong>
+                                <em>物理系女生收到了来自未来的丈夫发来的求救信息，但她现在根本不认识这个男人。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2025</td>
+                    <td>科幻 / 爱情 / 悬疑</td>
+                    <td>9.7</td>
+                    <td>91.5万</td>
+                </tr>
+                <tr data-card data-title="圣女贞德" data-region="法国" data-genre="剧情 / 历史 / 奇幻" data-year="2025">
+                    <td><span class="table-rank">36</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0858.html">
+                            <img src="./108.jpg" alt="圣女贞德" loading="lazy">
+                            <span>
+                                <strong>圣女贞德</strong>
+                                <em>如果贞德没有听到神谕，她只是一个患有精神分裂症的农村女孩？本剧从精神病学视角重审圣女。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>法国</td>
+                    <td>2025</td>
+                    <td>剧情 / 历史 / 奇幻</td>
+                    <td>9.7</td>
+                    <td>91.2万</td>
+                </tr>
+                <tr data-card data-title="家和万事兴之双喜临门" data-region="中国香港" data-genre="家庭喜剧" data-year="1998">
+                    <td><span class="table-rank">37</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1078.html">
+                            <img src="./28.jpg" alt="家和万事兴之双喜临门" loading="lazy">
+                            <span>
+                                <strong>家和万事兴之双喜临门</strong>
+                                <em>分居两地的一对双胞胎姐妹在除夕夜互换身份，却意外撮合了父母破镜重圆。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国香港</td>
+                    <td>1998</td>
+                    <td>家庭喜剧</td>
+                    <td>9.7</td>
+                    <td>91.2万</td>
+                </tr>
+                <tr data-card data-title="全广场" data-region="韩国" data-genre="悬疑 / 犯罪 / 剧情" data-year="2027">
+                    <td><span class="table-rank">38</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1012.html">
+                            <img src="./112.jpg" alt="全广场" loading="lazy">
+                            <span>
+                                <strong>全广场</strong>
+                                <em>首尔最大超市“全广场”开业当天，所有顾客和员工被困，空气传播的病毒让人在30秒内变成嗜血怪物。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>韩国</td>
+                    <td>2027</td>
+                    <td>悬疑 / 犯罪 / 剧情</td>
+                    <td>9.7</td>
+                    <td>91.1万</td>
+                </tr>
+                <tr data-card data-title="摇滚未来" data-region="中国大陆" data-genre="科幻, 音乐" data-year="2026">
+                    <td><span class="table-rank">39</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0968.html">
+                            <img src="./68.jpg" alt="摇滚未来" loading="lazy">
+                            <span>
+                                <strong>摇滚未来</strong>
+                                <em>在脑机接口统治的时代，一支地下摇滚乐队用真正的噪音对抗无声的精神囚笼。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2026</td>
+                    <td>科幻, 音乐</td>
+                    <td>9.7</td>
+                    <td>90.7万</td>
+                </tr>
+                <tr data-card data-title="狂犬大灾难" data-region="美国" data-genre="恐怖" data-year="2022">
+                    <td><span class="table-rank">40</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0682.html">
+                            <img src="./82.jpg" alt="狂犬大灾难" loading="lazy">
+                            <span>
+                                <strong>狂犬大灾难</strong>
+                                <em>一款狂犬病毒变异，感染后的狗会像僵尸一样攻击人类，整个小镇一夜之间变成猎杀场。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2022</td>
+                    <td>恐怖</td>
+                    <td>9.7</td>
+                    <td>90.7万</td>
+                </tr>
+                <tr data-card data-title="地窖" data-region="韩国" data-genre="恐怖 / 悬疑" data-year="2023">
+                    <td><span class="table-rank">41</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0792.html">
+                            <img src="./42.jpg" alt="地窖" loading="lazy">
+                            <span>
+                                <strong>地窖</strong>
+                                <em>搬进新家后，孩子们总说半夜听到地窖里有弹珠声，但房产图上并没有地窖。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>韩国</td>
+                    <td>2023</td>
+                    <td>恐怖 / 悬疑</td>
+                    <td>9.7</td>
+                    <td>90.1万</td>
+                </tr>
+                <tr data-card data-title="畸人艳迹" data-region="中国台湾" data-genre="剧情, 奇幻" data-year="2028">
+                    <td><span class="table-rank">42</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1166.html">
+                            <img src="./116.jpg" alt="畸人艳迹" loading="lazy">
+                            <span>
+                                <strong>畸人艳迹</strong>
+                                <em>上世纪六十年代的高雄马戏团里，一位“连体双胞胎”中的妹妹爱上了前来调查“怪胎”的社会局女调查员。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国台湾</td>
+                    <td>2028</td>
+                    <td>剧情, 奇幻</td>
+                    <td>9.7</td>
+                    <td>90.0万</td>
+                </tr>
+                <tr data-card data-title="绝对占领" data-region="韩国" data-genre="科幻 / 政治" data-year="2024">
+                    <td><span class="table-rank">43</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0902.html">
+                            <img src="./2.jpg" alt="绝对占领" loading="lazy">
+                            <span>
+                                <strong>绝对占领</strong>
+                                <em>一款叫“占领”的脑机接口游戏，让赢家可以真实拥有输家的全部财产与记忆。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>韩国</td>
+                    <td>2024</td>
+                    <td>科幻 / 政治</td>
+                    <td>9.7</td>
+                    <td>89.6万</td>
+                </tr>
+                <tr data-card data-title="磨到死" data-region="中国台湾" data-genre="剧情, 家庭" data-year="2024">
+                    <td><span class="table-rank">44</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0946.html">
+                            <img src="./46.jpg" alt="磨到死" loading="lazy">
+                            <span>
+                                <strong>磨到死</strong>
+                                <em>辞职照顾失智母亲的中年儿子，在日复一日的消磨中，逐渐产生了弑母的念头。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国台湾</td>
+                    <td>2024</td>
+                    <td>剧情, 家庭</td>
+                    <td>9.7</td>
+                    <td>89.0万</td>
+                </tr>
+                <tr data-card data-title="食人族残酷世界" data-region="意大利" data-genre="冒险 / 恐怖" data-year="1980">
+                    <td><span class="table-rank">45</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0660.html">
+                            <img src="./60.jpg" alt="食人族残酷世界" loading="lazy">
+                            <span>
+                                <strong>食人族残酷世界</strong>
+                                <em>一个人类学家深入亚马逊丛林寻找失踪的摄制组，却发现了比食人族更可怕的，是文明世界的人性之恶。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>意大利</td>
+                    <td>1980</td>
+                    <td>冒险 / 恐怖</td>
+                    <td>9.7</td>
+                    <td>89.0万</td>
+                </tr>
+                <tr data-card data-title="鲨鱼爱老鹰" data-region="西班牙" data-genre="爱情，奇幻，黑色幽默" data-year="2018">
+                    <td><span class="table-rank">46</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1276.html">
+                            <img src="./76.jpg" alt="鲨鱼爱老鹰" loading="lazy">
+                            <span>
+                                <strong>鲨鱼爱老鹰</strong>
+                                <em>一个坚信自己是鲨鱼转世的男人，爱上了一个自称老鹰投胎的女人，他们决定用决斗来结婚。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>西班牙</td>
+                    <td>2018</td>
+                    <td>爱情，奇幻，黑色幽默</td>
+                    <td>9.7</td>
+                    <td>88.5万</td>
+                </tr>
+                <tr data-card data-title="那时我们还小" data-region="中国台湾" data-genre="剧情，家庭，成长" data-year="2022">
+                    <td><span class="table-rank">47</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0880.html">
+                            <img src="./130.jpg" alt="那时我们还小" loading="lazy">
+                            <span>
+                                <strong>那时我们还小</strong>
+                                <em>一张尘封的毕业纪念册，让四位中年发小的记忆闪回到1999年的那个炎热夏天。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国台湾</td>
+                    <td>2022</td>
+                    <td>剧情，家庭，成长</td>
+                    <td>9.7</td>
+                    <td>87.9万</td>
+                </tr>
+                <tr data-card data-title="追星病毒" data-region="中国大陆" data-genre="剧情 / 喜剧" data-year="2024">
+                    <td><span class="table-rank">48</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1034.html">
+                            <img src="./134.jpg" alt="追星病毒" loading="lazy">
+                            <span>
+                                <strong>追星病毒</strong>
+                                <em>当疯狂追星的美术生发现偶像画作剽窃自己作品，一场颠覆饭圈的复仇悄然展开。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2024</td>
+                    <td>剧情 / 喜剧</td>
+                    <td>9.7</td>
+                    <td>87.8万</td>
+                </tr>
+                <tr data-card data-title="逆贫大叔" data-region="韩国" data-genre="剧情" data-year="2024">
+                    <td><span class="table-rank">49</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1056.html">
+                            <img src="./6.jpg" alt="逆贫大叔" loading="lazy">
+                            <span>
+                                <strong>逆贫大叔</strong>
+                                <em>一个穷了五十年的男人，突然决定要用一种荒诞的方式，让自己在六十岁之前“逆袭”成富人。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>韩国</td>
+                    <td>2024</td>
+                    <td>剧情</td>
+                    <td>9.7</td>
+                    <td>87.5万</td>
+                </tr>
+                <tr data-card data-title="局外人" data-region="法国" data-genre="剧情、犯罪、惊悚" data-year="2022">
+                    <td><span class="table-rank">50</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0924.html">
+                            <img src="./24.jpg" alt="局外人" loading="lazy">
+                            <span>
+                                <strong>局外人</strong>
+                                <em>为了调查杀妻仇人，前警察伪装成流浪汉打入黑帮内部，却在杀戮与忠诚中逐渐迷失，忘记了自己是谁。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>法国</td>
+                    <td>2022</td>
+                    <td>剧情、犯罪、惊悚</td>
+                    <td>9.7</td>
+                    <td>87.3万</td>
+                </tr>
+                <tr data-card data-title="生死赌局" data-region="中国香港" data-genre="犯罪 / 动作 / 悬疑" data-year="2024">
+                    <td><span class="table-rank">51</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1122.html">
+                            <img src="./72.jpg" alt="生死赌局" loading="lazy">
+                            <span>
+                                <strong>生死赌局</strong>
+                                <em>为救妹妹，数学天才潜入死亡赌局，却发现赌注是你无法想象的器官。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国香港</td>
+                    <td>2024</td>
+                    <td>犯罪 / 动作 / 悬疑</td>
+                    <td>9.7</td>
+                    <td>86.6万</td>
+                </tr>
+                <tr data-card data-title="杀手迷情" data-region="中国香港" data-genre="动作，爱情，悬疑" data-year="2024">
+                    <td><span class="table-rank">52</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1144.html">
+                            <img src="./94.jpg" alt="杀手迷情" loading="lazy">
+                            <span>
+                                <strong>杀手迷情</strong>
+                                <em>一名顶级女杀手在执行任务时，意外发现目标竟是失忆后成为普通设计师的前男友。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国香港</td>
+                    <td>2024</td>
+                    <td>动作，爱情，悬疑</td>
+                    <td>9.7</td>
+                    <td>86.3万</td>
+                </tr>
+                <tr data-card data-title="土耳其狂欢" data-region="荷兰" data-genre="爱情、剧情、情色" data-year="1973">
+                    <td><span class="table-rank">53</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1100.html">
+                            <img src="./50.jpg" alt="土耳其狂欢" loading="lazy">
+                            <span>
+                                <strong>土耳其狂欢</strong>
+                                <em>阿姆斯特丹的街头雕塑家与一名神秘土耳其裔女子，展开了一场炽热而致命的狂欢之恋。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>荷兰</td>
+                    <td>1973</td>
+                    <td>爱情、剧情、情色</td>
+                    <td>9.7</td>
+                    <td>85.9万</td>
+                </tr>
+                <tr data-card data-title="她对星星歌唱" data-region="英国" data-genre="剧情，家庭，奇幻" data-year="2024">
+                    <td><span class="table-rank">54</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1188.html">
+                            <img src="./138.jpg" alt="她对星星歌唱" loading="lazy">
+                            <span>
+                                <strong>她对星星歌唱</strong>
+                                <em>一个患有自闭症、从不说话的女孩，只在深夜对着星空唱歌，歌声竟能引来流星。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>英国</td>
+                    <td>2024</td>
+                    <td>剧情，家庭，奇幻</td>
+                    <td>9.7</td>
+                    <td>85.7万</td>
+                </tr>
+                <tr data-card data-title="杜宾巡官：敌对姐妹" data-region="法国" data-genre="犯罪 / 悬疑" data-year="2020">
+                    <td><span class="table-rank">55</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0990.html">
+                            <img src="./90.jpg" alt="杜宾巡官：敌对姐妹" loading="lazy">
+                            <span>
+                                <strong>杜宾巡官：敌对姐妹</strong>
+                                <em>杜宾巡官与他的杜宾犬接手一桩离奇案件：一对双胞胎姐妹互为对方的不在场证明，却都指向同一具尸体。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>法国</td>
+                    <td>2020</td>
+                    <td>犯罪 / 悬疑</td>
+                    <td>9.7</td>
+                    <td>84.4万</td>
+                </tr>
+                <tr data-card data-title="想踢沉迷男的女人" data-region="日本" data-genre="喜剧 / 爱情 / 职场" data-year="2023">
+                    <td><span class="table-rank">56</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1232.html">
+                            <img src="./32.jpg" alt="想踢沉迷男的女人" loading="lazy">
+                            <span>
+                                <strong>想踢沉迷男的女人</strong>
+                                <em>32岁的女白领被公司后辈当众求婚羞辱，她一怒之下踢了对方，却被一个路过的22岁健身教练全程拍下并爱上了她。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>日本</td>
+                    <td>2023</td>
+                    <td>喜剧 / 爱情 / 职场</td>
+                    <td>9.7</td>
+                    <td>84.1万</td>
+                </tr>
+                <tr data-card data-title="澳大利亚" data-region="澳大利亚" data-genre="历史/冒险" data-year="2023">
+                    <td><span class="table-rank">57</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1254.html">
+                            <img src="./54.jpg" alt="澳大利亚" loading="lazy">
+                            <span>
+                                <strong>澳大利亚</strong>
+                                <em>二战前夕，一名英国贵族遗孀与土著牧人结盟，穿越千里荒漠运送牛群，对抗野心家。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>澳大利亚</td>
+                    <td>2023</td>
+                    <td>历史/冒险</td>
+                    <td>9.7</td>
+                    <td>83.8万</td>
+                </tr>
+                <tr data-card data-title="四次旅行" data-region="中国大陆" data-genre="剧情, 爱情" data-year="2025">
+                    <td><span class="table-rank">58</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1408.html">
+                            <img src="./58.jpg" alt="四次旅行" loading="lazy">
+                            <span>
+                                <strong>四次旅行</strong>
+                                <em>绝症女孩四次穿越回过去，不是为自救，而是为教爱人如何忘记自己。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2025</td>
+                    <td>剧情, 爱情</td>
+                    <td>9.7</td>
+                    <td>83.7万</td>
+                </tr>
+                <tr data-card data-title="精灵宝可梦：超梦的逆袭" data-region="日本" data-genre="奇幻， 动作， 科幻" data-year="1998">
+                    <td><span class="table-rank">59</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1650.html">
+                            <img src="./150.jpg" alt="精灵宝可梦：超梦的逆袭" loading="lazy">
+                            <span>
+                                <strong>精灵宝可梦：超梦的逆袭</strong>
+                                <em>最强人造宝可梦超梦向人类宣战，克隆宝可梦与原版宝可梦的对决，拷问了谁才配拥有灵魂。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>日本</td>
+                    <td>1998</td>
+                    <td>奇幻， 动作， 科幻</td>
+                    <td>9.7</td>
+                    <td>83.4万</td>
+                </tr>
+                <tr data-card data-title="玩具之父盖比特" data-region="意大利" data-genre="奇幻、剧情、传记" data-year="2023">
+                    <td><span class="table-rank">60</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1298.html">
+                            <img src="./98.jpg" alt="玩具之父盖比特" loading="lazy">
+                            <span>
+                                <strong>玩具之父盖比特</strong>
+                                <em>孤僻的老木匠在妻子离世后，决心用毕生技艺打造一个能陪他说话的木偶女孩。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>意大利</td>
+                    <td>2023</td>
+                    <td>奇幻、剧情、传记</td>
+                    <td>9.7</td>
+                    <td>83.2万</td>
+                </tr>
+                <tr data-card data-title="她的业余爱好" data-region="中国" data-genre="剧情 / 悬疑" data-year="2023">
+                    <td><span class="table-rank">61</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1320.html">
+                            <img src="./120.jpg" alt="她的业余爱好" loading="lazy">
+                            <span>
+                                <strong>她的业余爱好</strong>
+                                <em>一位平凡女会计的编织爱好，竟成了她惩治职场恶霸的完美凶器。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国</td>
+                    <td>2023</td>
+                    <td>剧情 / 悬疑</td>
+                    <td>9.7</td>
+                    <td>82.9万</td>
+                </tr>
+                <tr data-card data-title="我的阳光" data-region="泰国" data-genre="爱情，青春" data-year="2019">
+                    <td><span class="table-rank">62</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1760.html">
+                            <img src="./110.jpg" alt="我的阳光" loading="lazy">
+                            <span>
+                                <strong>我的阳光</strong>
+                                <em>因事故失明的少年，遇见了被同学嘲笑为“丑女”的少女，她成了他黑暗中的阳光。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>泰国</td>
+                    <td>2019</td>
+                    <td>爱情，青春</td>
+                    <td>9.7</td>
+                    <td>82.9万</td>
+                </tr>
+                <tr data-card data-title="红色护卫" data-region="中国大陆" data-genre="战争 / 冒险" data-year="2023">
+                    <td><span class="table-rank">63</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1342.html">
+                            <img src="./142.jpg" alt="红色护卫" loading="lazy">
+                            <span>
+                                <strong>红色护卫</strong>
+                                <em>长征途中，一名女狙击手奉命护送一本顶级密码本，身后是敌军整一个师。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2023</td>
+                    <td>战争 / 冒险</td>
+                    <td>9.7</td>
+                    <td>82.6万</td>
+                </tr>
+                <tr data-card data-title="二八佳人花公子续集" data-region="中国香港" data-genre="喜剧 / 爱情" data-year="1991">
+                    <td><span class="table-rank">64</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1210.html">
+                            <img src="./10.jpg" alt="二八佳人花公子续集" loading="lazy">
+                            <span>
+                                <strong>二八佳人花公子续集</strong>
+                                <em>花公子刚继承家产便遭遇意外失忆，醒来后坚信自己是个穷光蛋，并爱上了真正的穷丫头。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国香港</td>
+                    <td>1991</td>
+                    <td>喜剧 / 爱情</td>
+                    <td>9.7</td>
+                    <td>82.4万</td>
+                </tr>
+                <tr data-card data-title="青楼红杏" data-region="中国香港" data-genre="剧情/情色" data-year="1995">
+                    <td><span class="table-rank">65</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1540.html">
+                            <img src="./40.jpg" alt="青楼红杏" loading="lazy">
+                            <span>
+                                <strong>青楼红杏</strong>
+                                <em>民国花魁为报恩嫁入豪门，却发现恩人正是当年毁她清白的仇家之子。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国香港</td>
+                    <td>1995</td>
+                    <td>剧情/情色</td>
+                    <td>9.7</td>
+                    <td>81.9万</td>
+                </tr>
+                <tr data-card data-title="挣脱枷锁" data-region="印度" data-genre="剧情 / 体育" data-year="2024">
+                    <td><span class="table-rank">66</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1474.html">
+                            <img src="./124.jpg" alt="挣脱枷锁" loading="lazy">
+                            <span>
+                                <strong>挣脱枷锁</strong>
+                                <em>低种姓女孩想学摔跤，全村反对，她唯一的教练是曾经因“背叛种姓”而被逐出村落的同乡。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>印度</td>
+                    <td>2024</td>
+                    <td>剧情 / 体育</td>
+                    <td>9.7</td>
+                    <td>81.8万</td>
+                </tr>
+                <tr data-card data-title="火山" data-region="冰岛" data-genre="剧情 / 家庭" data-year="2023">
+                    <td><span class="table-rank">67</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1430.html">
+                            <img src="./80.jpg" alt="火山" loading="lazy">
+                            <span>
+                                <strong>火山</strong>
+                                <em>一位地质学家父亲带着疏远的女儿深入活火山区，却在大喷发前夕发现了比岩浆更滚烫的家庭秘密。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>冰岛</td>
+                    <td>2023</td>
+                    <td>剧情 / 家庭</td>
+                    <td>9.7</td>
+                    <td>81.4万</td>
+                </tr>
+                <tr data-card data-title="企鹅宝贝2：极地的呼唤" data-region="法国, 美国" data-genre="纪录片, 家庭, 冒险" data-year="2025">
+                    <td><span class="table-rank">68</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1584.html">
+                            <img src="./84.jpg" alt="企鹅宝贝2：极地的呼唤" loading="lazy">
+                            <span>
+                                <strong>企鹅宝贝2：极地的呼唤</strong>
+                                <em>幼年帝企鹅“小脚板”在第一次独自下海捕鱼时被洋流卷走，跨越半个南极圈踏上回家之路。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>法国, 美国</td>
+                    <td>2025</td>
+                    <td>纪录片, 家庭, 冒险</td>
+                    <td>9.7</td>
+                    <td>81.3万</td>
+                </tr>
+                <tr data-card data-title="爱的多米诺" data-region="中国大陆" data-genre="爱情 / 家庭 / 剧情" data-year="2024">
+                    <td><span class="table-rank">69</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1518.html">
+                            <img src="./18.jpg" alt="爱的多米诺" loading="lazy">
+                            <span>
+                                <strong>爱的多米诺</strong>
+                                <em>一次同学聚会上的真心话游戏，引发了三对夫妻和情侣之间的信任崩塌多米诺效应。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2024</td>
+                    <td>爱情 / 家庭 / 剧情</td>
+                    <td>9.7</td>
+                    <td>81.2万</td>
+                </tr>
+                <tr data-card data-title="厄灵镇" data-region="美国" data-genre="超自然恐怖" data-year="2025">
+                    <td><span class="table-rank">70</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1606.html">
+                            <img src="./106.jpg" alt="厄灵镇" loading="lazy">
+                            <span>
+                                <strong>厄灵镇</strong>
+                                <em>美国中西部一个与世隔绝的小镇，每个居民都在重复自己最恐惧的那一天，已经重复了四十年。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2025</td>
+                    <td>超自然恐怖</td>
+                    <td>9.7</td>
+                    <td>81.0万</td>
+                </tr>
+                <tr data-card data-title="造衣者" data-region="中国大陆" data-genre="剧情，家庭" data-year="2025">
+                    <td><span class="table-rank">71</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1628.html">
+                            <img src="./128.jpg" alt="造衣者" loading="lazy">
+                            <span>
+                                <strong>造衣者</strong>
+                                <em>一位即将关闭旗袍店的老师傅，在最后七天里为三位陌生女人缝制衣裳，却缝出了自己的秘密。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2025</td>
+                    <td>剧情，家庭</td>
+                    <td>9.7</td>
+                    <td>80.7万</td>
+                </tr>
+                <tr data-card data-title="忠狗巴比传" data-region="英国" data-genre="家庭 / 剧情 / 历史" data-year="2024">
+                    <td><span class="table-rank">72</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1562.html">
+                            <img src="./62.jpg" alt="忠狗巴比传" loading="lazy">
+                            <span>
+                                <strong>忠狗巴比传</strong>
+                                <em>19世纪苏格兰，一只斯凯梗犬在主人墓前守了整整十四年，全城为它送葬。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>英国</td>
+                    <td>2024</td>
+                    <td>家庭 / 剧情 / 历史</td>
+                    <td>9.7</td>
+                    <td>80.6万</td>
+                </tr>
+                <tr data-card data-title="滑动门" data-region="中国大陆" data-genre="剧情 / 爱情" data-year="2023">
+                    <td><span class="table-rank">73</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1496.html">
+                            <img src="./146.jpg" alt="滑动门" loading="lazy">
+                            <span>
+                                <strong>滑动门</strong>
+                                <em>一次地铁关门，让她的命运裂成了两条截然不同的时间线。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2023</td>
+                    <td>剧情 / 爱情</td>
+                    <td>9.7</td>
+                    <td>80.5万</td>
+                </tr>
+                <tr data-card data-title="人形恶吊" data-region="日本" data-genre="恐怖" data-year="2022">
+                    <td><span class="table-rank">74</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1452.html">
+                            <img src="./102.jpg" alt="人形恶吊" loading="lazy">
+                            <span>
+                                <strong>人形恶吊</strong>
+                                <em>一座老旧的玩偶博物馆里，一只被诅咒的木偶每到月圆便会扭动身躯，寻找新的主人。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>日本</td>
+                    <td>2022</td>
+                    <td>恐怖</td>
+                    <td>9.7</td>
+                    <td>80.1万</td>
+                </tr>
+                <tr data-card data-title="最后的嬉皮" data-region="美国" data-genre="剧情 / 音乐" data-year="2025">
+                    <td><span class="table-rank">75</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1672.html">
+                            <img src="./22.jpg" alt="最后的嬉皮" loading="lazy">
+                            <span>
+                                <strong>最后的嬉皮</strong>
+                                <em>一个当年伍德斯托克音乐节的嬉皮士，如今72岁住在养老院里，用一把破吉他和一首歌唤醒了痴呆症老友的记忆。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2025</td>
+                    <td>剧情 / 音乐</td>
+                    <td>9.7</td>
+                    <td>80.1万</td>
+                </tr>
+                <tr data-card data-title="圣女丽塔·达·卡西亚" data-region="意大利" data-genre="剧情 / 传记 / 宗教" data-year="1971">
+                    <td><span class="table-rank">76</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1386.html">
+                            <img src="./36.jpg" alt="圣女丽塔·达·卡西亚" loading="lazy">
+                            <span>
+                                <strong>圣女丽塔·达·卡西亚</strong>
+                                <em>被丈夫虐待、被儿子抛弃的女人，死后头上出现了无法解释的荆棘花环。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>意大利</td>
+                    <td>1971</td>
+                    <td>剧情 / 传记 / 宗教</td>
+                    <td>9.7</td>
+                    <td>80.0万</td>
+                </tr>
+                <tr data-card data-title="三分钟——超展开" data-region="中国大陆" data-genre="科幻, 悬疑" data-year="2020">
+                    <td><span class="table-rank">77</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1364.html">
+                            <img src="./14.jpg" alt="三分钟——超展开" loading="lazy">
+                            <span>
+                                <strong>三分钟——超展开</strong>
+                                <em>男人发现每天睡前有三分钟可以回到过去，但他每次修改都会导致妻子变成另一个人。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2020</td>
+                    <td>科幻, 悬疑</td>
+                    <td>9.7</td>
+                    <td>79.3万</td>
+                </tr>
+                <tr data-card data-title="生活代价" data-region="中国台湾" data-genre="家庭, 伦理" data-year="2025">
+                    <td><span class="table-rank">78</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1782.html">
+                            <img src="./132.jpg" alt="生活代价" loading="lazy">
+                            <span>
+                                <strong>生活代价</strong>
+                                <em>为了保住房子，一家三代人各自出卖了最珍贵的东西，却发现买家是同一个人。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国台湾</td>
+                    <td>2025</td>
+                    <td>家庭, 伦理</td>
+                    <td>9.7</td>
+                    <td>78.6万</td>
+                </tr>
+                <tr data-card data-title="一念时光" data-region="中国大陆" data-genre="奇幻悬疑" data-year="2024">
+                    <td><span class="table-rank">79</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1716.html">
+                            <img src="./66.jpg" alt="一念时光" loading="lazy">
+                            <span>
+                                <strong>一念时光</strong>
+                                <em>一个患有“重度选择障碍”的社畜，每次犹豫不决时，时间就会分裂成两个平行世界同时进行。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2024</td>
+                    <td>奇幻悬疑</td>
+                    <td>9.7</td>
+                    <td>78.5万</td>
+                </tr>
+                <tr data-card data-title="未来全明星：返校第三季" data-region="美国" data-genre="剧情， 运动， 青春" data-year="2025">
+                    <td><span class="table-rank">80</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1804.html">
+                            <img src="./4.jpg" alt="未来全明星：返校第三季" loading="lazy">
+                            <span>
+                                <strong>未来全明星：返校第三季</strong>
+                                <em>冠军球队面临解散危机，明星四分卫必须在新赛季治愈心魔，并弥合队友间因名利产生的裂痕。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2025</td>
+                    <td>剧情， 运动， 青春</td>
+                    <td>9.7</td>
+                    <td>78.3万</td>
+                </tr>
+                <tr data-card data-title="顽童历险记" data-region="美国" data-genre="剧情 / 冒险" data-year="2024">
+                    <td><span class="table-rank">81</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1738.html">
+                            <img src="./88.jpg" alt="顽童历险记" loading="lazy">
+                            <span>
+                                <strong>顽童历险记</strong>
+                                <em>四个问题少年偷走一艘木筏，却在密西西比河上遭遇了远比成人世界更危险的秘密。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2024</td>
+                    <td>剧情 / 冒险</td>
+                    <td>9.7</td>
+                    <td>78.2万</td>
+                </tr>
+                <tr data-card data-title="幽魂娜娜" data-region="泰国" data-genre="恐怖爱情" data-year="2025">
+                    <td><span class="table-rank">82</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1892.html">
+                            <img src="./92.jpg" alt="幽魂娜娜" loading="lazy">
+                            <span>
+                                <strong>幽魂娜娜</strong>
+                                <em>一个不信鬼的记者去采访娜娜庙，却被娜娜的鬼魂缠上，要求他帮自己找到丈夫转世后的那个男人。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>泰国</td>
+                    <td>2025</td>
+                    <td>恐怖爱情</td>
+                    <td>9.7</td>
+                    <td>77.1万</td>
+                </tr>
+                <tr data-card data-title="绝路逢生" data-region="中国大陆" data-genre="犯罪, 悬疑, 动作" data-year="2024">
+                    <td><span class="table-rank">83</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1848.html">
+                            <img src="./48.jpg" alt="绝路逢生" loading="lazy">
+                            <span>
+                                <strong>绝路逢生</strong>
+                                <em>一名走投无路的黑车司机意外载上三名互不相识的逃犯，一段夜路变成了所有人的人性大逃杀。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2024</td>
+                    <td>犯罪, 悬疑, 动作</td>
+                    <td>9.7</td>
+                    <td>76.7万</td>
+                </tr>
+                <tr data-card data-title="您的老鼠好友" data-region="美国" data-genre="家庭、奇幻、冒险" data-year="2024">
+                    <td><span class="table-rank">84</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1870.html">
+                            <img src="./70.jpg" alt="您的老鼠好友" loading="lazy">
+                            <span>
+                                <strong>您的老鼠好友</strong>
+                                <em>失业音乐家发现公寓里的小老鼠不仅能作曲，还打算帮他赢得百万奖金大赛。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2024</td>
+                    <td>家庭、奇幻、冒险</td>
+                    <td>9.7</td>
+                    <td>76.4万</td>
+                </tr>
+                <tr data-card data-title="舒加利3" data-region="俄罗斯" data-genre="战争 / 剧情 / 传记" data-year="2023">
+                    <td><span class="table-rank">85</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1826.html">
+                            <img src="./26.jpg" alt="舒加利3" loading="lazy">
+                            <span>
+                                <strong>舒加利3</strong>
+                                <em>战地记者舒加利第三次深入顿巴斯前线，这次他不再只是记录，而是被迫举起武器保护平民撤离。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>俄罗斯</td>
+                    <td>2023</td>
+                    <td>战争 / 剧情 / 传记</td>
+                    <td>9.7</td>
+                    <td>76.0万</td>
+                </tr>
+                <tr data-card data-title="战士第二季" data-region="美国" data-genre="动作" data-year="2020">
+                    <td><span class="table-rank">86</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1694.html">
+                            <img src="./44.jpg" alt="战士第二季" loading="lazy">
+                            <span>
+                                <strong>战士第二季</strong>
+                                <em>1870年代旧金山唐人街，武功高强的华人移民在爱尔兰帮和警局夹缝中杀出血路。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2020</td>
+                    <td>动作</td>
+                    <td>9.7</td>
+                    <td>74.8万</td>
+                </tr>
+                <tr data-card data-title="借王" data-region="香港" data-genre="犯罪 / 动作" data-year="2023">
+                    <td><span class="table-rank">87</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1914.html">
+                            <img src="./114.jpg" alt="借王" loading="lazy">
+                            <span>
+                                <strong>借王</strong>
+                                <em>金融精英为调查好友之死伪装成借贷者，发现全港最大的“债王”竟是一个从不开口说话的老人。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>香港</td>
+                    <td>2023</td>
+                    <td>犯罪 / 动作</td>
+                    <td>9.7</td>
+                    <td>74.8万</td>
+                </tr>
+                <tr data-card data-title="夜风" data-region="日本" data-genre="爱情 / 剧情" data-year="2023">
+                    <td><span class="table-rank">88</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1936.html">
+                            <img src="./136.jpg" alt="夜风" loading="lazy">
+                            <span>
+                                <strong>夜风</strong>
+                                <em>深夜电台主持人收到一封来自十年前的匿名信，信里说：今夜的风，和你离开那晚一模一样。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>日本</td>
+                    <td>2023</td>
+                    <td>爱情 / 剧情</td>
+                    <td>9.7</td>
+                    <td>74.5万</td>
+                </tr>
+                <tr data-card data-title="食人巨蛛" data-region="美国" data-genre="恐怖， 科幻" data-year="2023">
+                    <td><span class="table-rank">89</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1958.html">
+                            <img src="./8.jpg" alt="食人巨蛛" loading="lazy">
+                            <span>
+                                <strong>食人巨蛛</strong>
+                                <em>亚马逊丛林地下实验泄漏，培养出体长三米的食人巨蛛，一支探险队必须在繁殖季前炸毁巢穴。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2023</td>
+                    <td>恐怖， 科幻</td>
+                    <td>9.7</td>
+                    <td>74.2万</td>
+                </tr>
+                <tr data-card data-title="数码宝贝大冒险 重启" data-region="日本" data-genre="冒险 / 科幻" data-year="2020">
+                    <td><span class="table-rank">90</span></td>
+                    <td>
+                        <a class="rank-title" href="video-1980.html">
+                            <img src="./30.jpg" alt="数码宝贝大冒险 重启" loading="lazy">
+                            <span>
+                                <strong>数码宝贝大冒险 重启</strong>
+                                <em>2020年，东京网络瘫痪，被选召的孩子们再次集结，但这一次，数码世界的敌人来自他们的手机应用。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>日本</td>
+                    <td>2020</td>
+                    <td>冒险 / 科幻</td>
+                    <td>9.7</td>
+                    <td>70.9万</td>
+                </tr>
+                <tr data-card data-title="伟大的国王" data-region="英国" data-genre="历史" data-year="2018">
+                    <td><span class="table-rank">91</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0019.html">
+                            <img src="./19.jpg" alt="伟大的国王" loading="lazy">
+                            <span>
+                                <strong>伟大的国王</strong>
+                                <em>他统一了七国却被史书抹去，因为他不肯把王冠交给教会。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>英国</td>
+                    <td>2018</td>
+                    <td>历史</td>
+                    <td>9.6</td>
+                    <td>105.7万</td>
+                </tr>
+                <tr data-card data-title="囚禁" data-region="韩国" data-genre="悬疑， 惊悚， 犯罪" data-year="2019">
+                    <td><span class="table-rank">92</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0107.html">
+                            <img src="./107.jpg" alt="囚禁" loading="lazy">
+                            <span>
+                                <strong>囚禁</strong>
+                                <em>她被变态囚禁在地下室三年，却反过来用心理学驯服了囚禁者。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>韩国</td>
+                    <td>2019</td>
+                    <td>悬疑， 惊悚， 犯罪</td>
+                    <td>9.6</td>
+                    <td>105.5万</td>
+                </tr>
+                <tr data-card data-title="我和两个他" data-region="中国大陆" data-genre="爱情，喜剧" data-year="2018">
+                    <td><span class="table-rank">93</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0129.html">
+                            <img src="./129.jpg" alt="我和两个他" loading="lazy">
+                            <span>
+                                <strong>我和两个他</strong>
+                                <em>一个高考落榜的欢脱少女，被迫与一个高冷数学天才同居，却发现他晚上10点后会切换成热情似火的第二人格，并且两个“他”都爱上了自己。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2018</td>
+                    <td>爱情，喜剧</td>
+                    <td>9.6</td>
+                    <td>104.2万</td>
+                </tr>
+                <tr data-card data-title="怨灵地下室" data-region="中国大陆" data-genre="恐怖 / 悬疑" data-year="2017">
+                    <td><span class="table-rank">94</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0063.html">
+                            <img src="./63.jpg" alt="怨灵地下室" loading="lazy">
+                            <span>
+                                <strong>怨灵地下室</strong>
+                                <em>一座民国精神病院的地下室，每一任院长进去后都会变成精神病人。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2017</td>
+                    <td>恐怖 / 悬疑</td>
+                    <td>9.6</td>
+                    <td>104.1万</td>
+                </tr>
+                <tr data-card data-title="绿色直接行动" data-region="德国" data-genre="惊悚， 动作" data-year="2025">
+                    <td><span class="table-rank">95</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0085.html">
+                            <img src="./85.jpg" alt="绿色直接行动" loading="lazy">
+                            <span>
+                                <strong>绿色直接行动</strong>
+                                <em>一个工业间谍卧底进入激进环保组织，却发现自己逐渐认同他们的“直接行动”理念。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>德国</td>
+                    <td>2025</td>
+                    <td>惊悚， 动作</td>
+                    <td>9.6</td>
+                    <td>101.8万</td>
+                </tr>
+                <tr data-card data-title="破坏者号：代号莫里图里" data-region="美国" data-genre="动作, 科幻, 战争" data-year="2024">
+                    <td><span class="table-rank">96</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0041.html">
+                            <img src="./41.jpg" alt="破坏者号：代号莫里图里" loading="lazy">
+                            <span>
+                                <strong>破坏者号：代号莫里图里</strong>
+                                <em>外星母舰降临，地球联军溃败，只有一艘被抛弃的废旧机甲“破坏者号”和它的疯子船员决定反击。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>美国</td>
+                    <td>2024</td>
+                    <td>动作, 科幻, 战争</td>
+                    <td>9.6</td>
+                    <td>101.4万</td>
+                </tr>
+                <tr data-card data-title="罗马，不设防的城市" data-region="意大利" data-genre="剧情， 历史， 战争" data-year="1976">
+                    <td><span class="table-rank">97</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0239.html">
+                            <img src="./89.jpg" alt="罗马，不设防的城市" loading="lazy">
+                            <span>
+                                <strong>罗马，不设防的城市</strong>
+                                <em>1944年德军占领下的罗马，九个不同身份的人挤在一间地下室，演绎一出末日人性悲喜剧。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>意大利</td>
+                    <td>1976</td>
+                    <td>剧情， 历史， 战争</td>
+                    <td>9.6</td>
+                    <td>100.7万</td>
+                </tr>
+                <tr data-card data-title="诱饵2019" data-region="中国大陆" data-genre="犯罪, 悬疑" data-year="2019">
+                    <td><span class="table-rank">98</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0525.html">
+                            <img src="./75.jpg" alt="诱饵2019" loading="lazy">
+                            <span>
+                                <strong>诱饵2019</strong>
+                                <em>为了抓捕跨国毒枭，警方派出一个“假毒贩”作为诱饵，却诱出了一场惊天内鬼案。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2019</td>
+                    <td>犯罪, 悬疑</td>
+                    <td>9.6</td>
+                    <td>99.8万</td>
+                </tr>
+                <tr data-card data-title="退伍也是兵" data-region="中国大陆" data-genre="动作 / 犯罪" data-year="2024">
+                    <td><span class="table-rank">99</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0173.html">
+                            <img src="./23.jpg" alt="退伍也是兵" loading="lazy">
+                            <span>
+                                <strong>退伍也是兵</strong>
+                                <em>退役特种兵为救被拐女儿，独自深入边境黑狱，以军人铁拳打响私人战争。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>中国大陆</td>
+                    <td>2024</td>
+                    <td>动作 / 犯罪</td>
+                    <td>9.6</td>
+                    <td>99.6万</td>
+                </tr>
+                <tr data-card data-title="依巴拉度时间" data-region="日本" data-genre="奇幻、文艺、治愈" data-year="2025">
+                    <td><span class="table-rank">100</span></td>
+                    <td>
+                        <a class="rank-title" href="video-0261.html">
+                            <img src="./111.jpg" alt="依巴拉度时间" loading="lazy">
+                            <span>
+                                <strong>依巴拉度时间</strong>
+                                <em>失忆的女孩在铁路终点站发现一列开往虚幻国度“依巴拉度”的列车，车程正好是一生。</em>
+                            </span>
+                        </a>
+                    </td>
+                    <td>日本</td>
+                    <td>2025</td>
+                    <td>奇幻、文艺、治愈</td>
+                    <td>9.6</td>
+                    <td>99.4万</td>
+                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-shell">
+            <div class="footer-brand">
+                <a class="brand brand-invert" href="index.html" aria-label="亚洲影片库首页">
+                    <span class="brand-mark" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" role="img" focusable="false">
+                            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 18.5v-13Z"></path>
+                            <path d="m10 8 6 4-6 4V8Z"></path>
+                        </svg>
+                    </span>
+                    <span class="brand-text">亚洲影片库</span>
+                </a>
+                <p>聚合最新亚洲影片、热门片库和高分佳作，按地区、类型与年份清晰浏览。</p>
+            </div>
+            <div class="footer-column">
+                <h2>快速入口</h2>
+                <a href="catalog-1.html">全部影片</a>
+                <a href="categories.html">影片分类</a>
+                <a href="ranking.html">热门排行</a>
+                <a href="search.html">影片搜索</a>
+            </div>
+            <div class="footer-column">
+                <h2>热门分类</h2>
+                <a href="category-asia.html">亚洲精选</a>
+                <a href="category-japan.html">日本影片</a>
+                <a href="category-korea.html">韩国影片</a>
+                <a href="category-action.html">动作冒险</a>
+            </div>
+            <div class="footer-column">
+                <h2>片库索引</h2>
+                <a href="catalog-1.html">第 1 页</a>
+                <a href="catalog-5.html">第 5 页</a>
+                <a href="catalog-10.html">第 10 页</a>
+                <a href="catalog-20.html">第 20 页</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 亚洲影片库</span>
+            <span>最新亚洲影片-最新影片合集-热门片库持续更新</span>
+        </div>
+    </footer>
+    <script src="./assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
